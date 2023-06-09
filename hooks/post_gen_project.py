@@ -3,9 +3,6 @@ import os
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
-# set additional helper variables
-{{ cookiecutter.update({"__project_slug_1": cookiecutter.project_name.upper().replace(' ', '_').replace('-', '_')}) }}
-
 def remove_file(filepath):
     os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
 
